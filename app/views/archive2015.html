@@ -1,0 +1,21 @@
+<div class="col-lg-12">
+	<h1>Archive 2015</h1>
+
+<div ng-if="preloader" class="text-center"><img src="http://orig06.deviantart.net/df77/f/2013/094/8/d/loading_logofinal_by_zegerdon-d60eb1v.gif" alt=""></div>
+
+	<div ng-repeat="month in months" class="col-md-3">
+
+		<month custom-month="month" filter-year="year" filter-month:"filterMonth"></month> 
+
+		<!-- <a href="#/archive/{{invoice.monthFilter}}">{{invoice.monthFilter}}</a> -->
+		<!-- <archivework custom-task-data="entry"></archivework> -->
+		<br><br>
+	</div>
+
+                        <!-- <div ng-repeat="entry in entries" class="col-md-4">
+                        
+                        	<archivework custom-task-data="entry"></archivework>
+<br><br>
+</div> -->
+
+</div>

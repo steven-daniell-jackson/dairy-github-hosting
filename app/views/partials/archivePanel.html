@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Entry - {{customTaskData.date| date:dateFormat}}</div>
+  
+  <!-- List group -->
+  <ul class="list-group">
+ <li class="list-group-item"><strong>Client name:</strong> {{customTaskData.clientName}}</li>
+    <li class="list-group-item"><strong>Platform:</strong> {{customTaskData.platform}}</li>
+    <li class="list-group-item"><strong>URL:</strong> {{customTaskData.url}}</li>
+    <li class="list-group-item"><strong>Work Done:</strong> {{customTaskData.workDone}}</li>
+    <li class="list-group-item"><strong>Date:</strong> {{customTaskData.date| date:dateFormat}}</li>
+    <li ng-show="customTaskData.comments" class="list-group-item"><strong>Comments:</strong> {{customTaskData.comments}}</li>
+
+  </ul>
+</div>
+

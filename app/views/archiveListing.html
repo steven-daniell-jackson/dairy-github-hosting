@@ -1,0 +1,13 @@
+
+<div class="col-lg-12">
+<h1>Archived work for {{filterMonth}}, {{year}} </h1>
+
+<div ng-if="preloader" class="text-center"><img src="http://orig06.deviantart.net/df77/f/2013/094/8/d/loading_logofinal_by_zegerdon-d60eb1v.gif" alt=""></div>
+
+	<div ng-repeat="entry in entries | filter:year | filter: filterMonth" class="col-md-4 layout-fix">
+
+		<taskpanel custom-task-data="entry"></taskpanel>
+		<br><br>
+	</div>
+
+</div>
