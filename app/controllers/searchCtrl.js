@@ -10,7 +10,6 @@ app.controller('SearchCtrl', function($scope, Task, $routeParams, $window) {
 
 
 $scope.preloader = true;
-   $scope.name = "testsasd222";
 
 $scope.reloadRoute = function() {
   $scope.clientNameFilter = '';
