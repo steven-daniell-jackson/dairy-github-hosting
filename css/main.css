@@ -136,6 +136,11 @@ div.searchWrapper {margin-bottom: 40px;}
 .panel-default>.panel-heading {color: #fff;
     background-color: #000;}
 
+.menu-btn {
+        position: fixed;
+    top: -2%;
+    left: 17%;
+}
 
 /*Media Queries*/
 @media(min-width:768px) {
