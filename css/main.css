@@ -139,6 +139,9 @@ div.searchWrapper {margin-bottom: 40px;}
 .menu-btn {
         margin: 0px;
 }
+h1 {
+    margin-top: 0px;
+}
 
 /*Media Queries*/
 @media(min-width:768px) {
