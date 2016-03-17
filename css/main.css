@@ -137,9 +137,7 @@ div.searchWrapper {margin-bottom: 40px;}
     background-color: #000;}
 
 .menu-btn {
-        position: fixed;
-    top: -2%;
-    left: 17%;
+        margin: 0px;
 }
 
 /*Media Queries*/
