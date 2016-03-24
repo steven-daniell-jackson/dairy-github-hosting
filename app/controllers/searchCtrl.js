@@ -8,7 +8,6 @@ app.controller('SearchCtrl', function($scope, Task, $routeParams, $window) {
    $scope.User = {};
    $scope.errorMessage = '';
 
-
 $scope.preloader = true;
 
 $scope.reloadRoute = function() {
@@ -19,7 +18,11 @@ $scope.reloadRoute = function() {
 // Access factory and assign the returned data
 Task.all()
 .success(function(data) {
+    
+    $scope.uniqueClientNames = clientNames(data);
+    // console.log($scope.uniqueClientNames)
     $scope.entries = data;
+    
 $scope.preloader = false;
 
 
@@ -31,3 +34,23 @@ $scope.preloader = false;
 
 
 });
+
+// Filter unique client names
+var clientNames  = function (data){
+   
+   var uniqueClients = [];
+    
+    for (var key in data) {
+        
+    if (uniqueClients.indexOf(data[key].clientName) == -1 && data[key].clientName != 'undefined') {
+        uniqueClients.push(data[key].clientName);
+    }
+      
+    }
+    
+    // Sort Array
+    uniqueClients.sort();
+    
+    return uniqueClients;
+
+}
